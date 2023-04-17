@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda De Contatos</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1 class="title">Agenda de contato</h1>
+    </header>
+    <div class="form"></div>
+    <form>
+      <input id="contact-name" type="text" placeholder="Nome do contato" required>
+      <input id="ddd-number" type="number" placeholder="xx" required>
+      <input id="phone-number" type="tel" placeholder="xxxxx-xxxx" required>
+      <button>Adicionar +</button>
+    </form>
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th>Contato</th>
+          <th>DDD</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="line-contact"></td>
+          <td id="line-ddd"></td>
+          <td id="line-number"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./assets/js/sctipt.js"></script>
+</body>
+
+</html>
