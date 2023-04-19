@@ -18,13 +18,15 @@
     <header>
       <h1 class="title">Agenda de contato</h1>
     </header>
-    <div class="form"></div>
     <form>
       <input id="contact-name" type="text" placeholder="Nome do contato" required>
-      <input id="ddd-number" type="number" placeholder="xx" required>
-      <input id="phone-number" type="tel" placeholder="xxxxx-xxxx" required>
+      <div class="full-phone-number ">
+        <input id="ddd-number" type="number" placeholder="xx" required>
+        <input id="phone-number" type="tel" placeholder="xxxxx-xxxx" required>
+      </div>
       <button id="btn-add">Adicionar +</button>
     </form>
+
     <table cellspacing="0">
       <thead>
         <tr>

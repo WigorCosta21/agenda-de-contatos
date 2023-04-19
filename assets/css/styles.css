@@ -14,25 +14,20 @@ body {
   padding: 1.5rem;
   max-width: 1024px;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .title {
   color: #243a69;
   font-size: 3rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-
 form {
-  width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   background: #221d21;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   border-radius: 5px;
 }
 
@@ -91,4 +86,29 @@ table td {
   padding: 1rem 0;
   color: #5b88a5;
   border-bottom: 1px solid #433d3d;
+}
+
+@media (max-width: 700px) {
+  form {
+    flex-direction: column;
+    padding: 3rem;
+
+  }
+
+  form input {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .full-phone-number {
+    display: flex;
+    width: 100%;
+  }
+
+  #ddd-number {
+    width: 20%;
+    margin-right: 5px;
+  }
+
+
 }
